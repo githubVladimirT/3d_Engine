@@ -1,7 +1,7 @@
 import os
 from colorama import Fore
 
-os.system("cls")
+os.system("clear")
 print(Fore.BLUE + "\t\tInfo:" + Fore.RESET)
 
 from object_3d import *
@@ -22,7 +22,7 @@ class SoftwareRender:
     def create_objects(self):
         self.camera = Camera(self, [-5, 5, -55])
         self.projection = Projection(self)
-        self.object = self.get_object_from_file('resources/model.obj')
+        self.object = self.get_object_from_file('resources/vasa.obj')
         self.object.rotate_y(-math.pi / 4)
 
     def get_object_from_file(self, filename):
